@@ -132,6 +132,7 @@
 		Batch Normalization là một kỹ thuật quan trọng được sử dụng trong Convolutional Neural Networks (CNNs) để cải thiện quá trình huấn luyện và ổn định mô hình. Nó giúp giảm hiện tượng "internal covariate shift," tức là sự thay đổi về phân phối của các đầu ra từ các lớp trước khi đưa vào các lớp kích hoạt (activation layers) như ReLU.
 		- Normalization: Trong mỗi batch (tập hợp các mẫu đầu vào), đầu ra của mỗi layer được chuẩn hóa sao cho có mean (trung bình) bằng 0 và độ lệch chuẩn (standard deviation) bằng 1. Điều này giúp mô hình học được các trọng số hiệu quả hơn.
 		<img src="https://lukanguyen.com/articles/batchnorm/Screenshot%202023-01-25%20at%209.56.45%20PM.png" width="400">
+		
 		- Scale và Shift (Gamma và Beta trong phương trình Batch Normalization): Sau khi chuẩn hóa, đầu ra được tỉ lệ với một tham số gamma và sau đó cộng với một tham số beta. Những tham số này được học trong quá trình huấn luyện và cho phép mô hình học các biểu diễn phức tạp hơn.
    - **i. Dense Layer**
 		- Lớp Dense này chứa các nơ-ron được kết nối đầy đủ với tất cả các nơ-ron ở lớp trước đó. Thường được sử dụng ở cuối mạng để kết hợp thông tin từ tất cả các đặc trưng đã được trích xuất và để tạo ra đầu ra dự đoán
@@ -141,7 +142,7 @@
         - ReLU
         
    - **k. Dropout**
-   
+		Dropout là một kỹ thuật chính regularization trong quá trình huấn luyện mạng neural, được thiết kế để giảm overfitting. Cơ chế của Dropout là tạm thời loại bỏ một số lượng ngẫu nhiên các đơn vị (neurons) trong mạng trong quá trình huấn luyện. Điều này giúp mô hình hoạt động hiệu quả hơn và giảm khả năng quá mức học các mẫu cụ thể trong dữ liệu đào tạo.
    - **l. Cấu trúc mạng**
         
         <img src="http://cs231n.github.io/assets/cnn/convnet.jpeg" width="440">
@@ -159,3 +160,4 @@
         - Fully Connected Layer (Dense Layer)
         
    - 
+

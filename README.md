@@ -127,14 +127,22 @@
    
 		Trong mạng neural convolutional (CNN), lớp Flatten được sử dụng để chuyển đổi các đặc trưng (feature maps) thành một vector 1D. Lớp Flatten thường được đặt ở cuối của mạng CNN trước khi đưa dữ liệu vào các lớp fully connected để thực hiện phân loại.
 		Ví dụ, nếu feature maps là một ma trận 3x3x64, thì sau lớp Flatten, ta sẽ có một vector 1D có kích thước là 576 (3 * 3 * 64).
-   - **h. Dense Layer**
+   
+   - **h. BatchNormalization**
+		Batch Normalization là một kỹ thuật quan trọng được sử dụng trong Convolutional Neural Networks (CNNs) để cải thiện quá trình huấn luyện và ổn định mô hình. Nó giúp giảm hiện tượng "internal covariate shift," tức là sự thay đổi về phân phối của các đầu ra từ các lớp trước khi đưa vào các lớp kích hoạt (activation layers) như ReLU.
+		- Normalization: Trong mỗi batch (tập hợp các mẫu đầu vào), đầu ra của mỗi layer được chuẩn hóa sao cho có mean (trung bình) bằng 0 và độ lệch chuẩn (standard deviation) bằng 1. Điều này giúp mô hình học được các trọng số hiệu quả hơn.
+		<img src="https://lukanguyen.com/articles/batchnorm/Screenshot%202023-01-25%20at%209.56.45%20PM.png" width="400">
+		- Scale và Shift (Gamma và Beta trong phương trình Batch Normalization): Sau khi chuẩn hóa, đầu ra được tỉ lệ với một tham số gamma và sau đó cộng với một tham số beta. Những tham số này được học trong quá trình huấn luyện và cho phép mô hình học các biểu diễn phức tạp hơn.
+   - **i. Dense Layer**
 		- Lớp Dense này chứa các nơ-ron được kết nối đầy đủ với tất cả các nơ-ron ở lớp trước đó. Thường được sử dụng ở cuối mạng để kết hợp thông tin từ tất cả các đặc trưng đã được trích xuất và để tạo ra đầu ra dự đoán
-   - **i. Các hàm kích hoạt**
+   - **j. Các hàm kích hoạt**
         - Sigmoid
         - Tanh
         - ReLU
         
-   - **h. Cấu trúc mạng**
+   - **k. Dropout**
+   
+   - **l. Cấu trúc mạng**
         
         <img src="http://cs231n.github.io/assets/cnn/convnet.jpeg" width="440">
         

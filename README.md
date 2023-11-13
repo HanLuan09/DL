@@ -1,4 +1,4 @@
-### Xây dựng mạng Convolutional Neural Network (CNN)
+### 9. Xây dựng mạng Convolutional Neural Network (CNN)
 ----
    Nếu bạn chưa có kiến thức về thị giác máy tính (Computer Vision) thì bạn nên đọc thêm về [loạt bài viết](https://github.com/bangoc123/learn-machine-learning-in-two-months/tree/master/computer-vision) tại đây.
    
@@ -121,10 +121,15 @@
             Là một dạng filter trả về giá trị trung bình của các phần tử trong ma trận mà filter đang trượt qua.
         
             <img src="https://lh3.googleusercontent.com/_p3jKDuyhvhwvdu29SucUNRv3MWBD-8XXDFwE47LootNPAb0Mi7ZZjVbh20y2oDWjgJRckmMQxhe-DHuwY7rxMPxnJocsz7RyBldGXRsPDrIlAl6rt1YFWXn1L-laO9u8S0j0S2PIFFp2D9pQZ6AvMuk9vrFfq8njrI2ZqNQNHB_U90uRbHinDDPmbDlU4fesrlkNpoWtyBMkg1k-Cx0lHXtdFn9ApHjBm1WKjD4ONX1ZLOnOFBney4BLSjrZEP5PUIsD7yPOinraZ-gDnIfNlaN70se8pXitXXYqygL7X2FZwywOzV9jvE1DjqHYM_UYZhC2q4ESMtlyvtA_MhWgYMgxZKay0aYJSXafXKxnFkw6dbPngPDpmc0nCnTjjiMLkVp09Jx_fFdte7ntaW3OM4d4KNLBWaOc7bUt8YVlrXSVl0M3ZVxdWgxNqSFl-in8MWODuN0nDVyUiooG_369xzMTrAvZg79S1BRCZTiQc9c_nhg-F9vdeqjLqAESjhbO5DmxFUu3fO2AVls5LwmsuEDS66H-ty9URYYe7vz8K9wHiXll_JVvdGz7RUWnjoWST_zn2yBgk3NSWziSX_CKIQUuyHZFsOQswOWOTrf19L_75QAZwY23v9NZUu9hGA4Bx75VF3psSYTrllBT8ogvoXyryJ_-pVF0WTsJS2HyMPoXqIksBqD5AHykQ=w318-h149-no" width="400">
-   - **g. Dense Layer**
-		- Lớp này chứa các nơ-ron được kết nối đầy đủ với tất cả các nơ-ron ở lớp trước đó. Thường được sử dụng ở cuối mạng để kết hợp thông tin từ tất cả các đặc trưng đã được trích xuất và để tạo ra đầu ra dự đoán
-		< img src="https://www.researchgate.net/profile/Hadley-Brooks/publication/270274130/figure/fig3/AS:667886670594050@1536247999230/Architecture-of-a-multilayer-neural-network-with-one-hidden-layer-The-input-layer.png">
-   - **g. Các hàm kích hoạt**
+   - **g. Flatten**
+		
+		<img src="https://tek4vn.2soft.top/public_files/capture-189-png-1" width="400">
+   
+		Trong mạng neural convolutional (CNN), lớp Flatten được sử dụng để chuyển đổi các đặc trưng (feature maps) thành một vector 1D. Lớp Flatten thường được đặt ở cuối của mạng CNN trước khi đưa dữ liệu vào các lớp fully connected để thực hiện phân loại.
+		Ví dụ, nếu feature maps là một ma trận 3x3x64, thì sau lớp Flatten, ta sẽ có một vector 1D có kích thước là 576 (3 * 3 * 64).
+   - **h. Dense Layer**
+		- Lớp Dense này chứa các nơ-ron được kết nối đầy đủ với tất cả các nơ-ron ở lớp trước đó. Thường được sử dụng ở cuối mạng để kết hợp thông tin từ tất cả các đặc trưng đã được trích xuất và để tạo ra đầu ra dự đoán
+   - **i. Các hàm kích hoạt**
         - Sigmoid
         - Tanh
         - ReLU
@@ -145,5 +150,5 @@
         - Các lớp pooling
         - Fully Connected Layer (Dense Layer)
         
-   - **i. Công thức tính toán đầu ra ở các lớp**
+   - 
 

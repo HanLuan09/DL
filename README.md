@@ -1,4 +1,4 @@
-### 9. Xây dựng mạng Convolutional Neural Network (CNN)
+### Xây dựng mạng Convolutional Neural Network (CNN)
 ----
    Nếu bạn chưa có kiến thức về thị giác máy tính (Computer Vision) thì bạn nên đọc thêm về [loạt bài viết](https://github.com/bangoc123/learn-machine-learning-in-two-months/tree/master/computer-vision) tại đây.
    
@@ -140,6 +140,8 @@
         - Sigmoid
         - Tanh
         - ReLU
+		- 
+		
         
    - **k. Dropout**
 		Dropout là một kỹ thuật chính regularization trong quá trình huấn luyện mạng neural, được thiết kế để giảm overfitting. Cơ chế của Dropout là tạm thời loại bỏ một số lượng ngẫu nhiên các đơn vị (neurons) trong mạng trong quá trình huấn luyện. Điều này giúp mô hình hoạt động hiệu quả hơn và giảm khả năng quá mức học các mẫu cụ thể trong dữ liệu đào tạo.
@@ -159,5 +161,6 @@
         - Các lớp pooling
         - Fully Connected Layer (Dense Layer)
         
-   - 
-
+   - Data augmentation
+		Augmentation là một kỹ thuật quan trọng giúp tăng cường tính đa dạng của dữ liệu đào tạo bằng cách áp dụng các biến đổi ngẫu nhiên cho hình ảnh. Điều này giúp mô hình học được từ nhiều góc độ và vị trí khác nhau của đối tượng trong hình ảnh, giảm nguy cơ overfitting và cải thiện khả năng tổng quát hóa
+		- ImageDataGenerator cho phép tạo thêm dữ liệu huấn luyện, flow_from_directory hoặc flow để tạo ra một luồng dữ liệu augmented trong quá trình huấn luyện mô hình

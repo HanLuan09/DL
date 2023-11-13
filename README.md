@@ -164,3 +164,11 @@
    - Data augmentation
 		Augmentation là một kỹ thuật quan trọng giúp tăng cường tính đa dạng của dữ liệu đào tạo bằng cách áp dụng các biến đổi ngẫu nhiên cho hình ảnh. Điều này giúp mô hình học được từ nhiều góc độ và vị trí khác nhau của đối tượng trong hình ảnh, giảm nguy cơ overfitting và cải thiện khả năng tổng quát hóa
 		- ImageDataGenerator cho phép tạo thêm dữ liệu huấn luyện, flow_from_directory hoặc flow để tạo ra một luồng dữ liệu augmented trong quá trình huấn luyện mô hình
+		
+### Recurrent neural networks (RNNs)
+---
+   - **a. Định nghĩa
+   
+		- Mạng thần kinh tái phát (RNN) hoạt động bằng cách xử lý chuỗi đầu vào theo dấu thời gian tại một thời điểm và duy trì một trạng thái xuyên suốt (trạng thái thường là một vectơ hoặc tập hợp các vectơ
+		
+		- Trong Keras, có ba lớp RNN: SimpleRNN, GRU và LSTM. Đối với hầu hết các mục đích thực tế, bạn nên sử dụng GRU hoặc LSTM. LSTM mạnh mẽ hơn nhưng cũng đắt đỏ hơn; bạn có thể coi GRU là một lựa chọn đơn giản và giá rẻ hơn.

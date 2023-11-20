@@ -167,8 +167,8 @@
 		
 ### Recurrent neural networks (RNNs)
 ---
-   - **a. Định nghĩa
+   - **a. Định nghĩa**
    
 		- Mạng thần kinh tái phát (RNN) hoạt động bằng cách xử lý chuỗi đầu vào theo dấu thời gian tại một thời điểm và duy trì một trạng thái xuyên suốt (trạng thái thường là một vectơ hoặc tập hợp các vectơ
-		
+		- Điều này cho phép mạng thể hiện hành vi động tạm thời. Có nguồn gốc từ mạng thần kinh truyền thẳng, RNN có thể dùng trạng thái trong (bộ nhớ) để xử lý các chuỗi đầu vào có độ dài thay đổi. Điều này làm cho RNN có thể áp dụng cho các tác vụ như nhận dạng chữ viết tay (handwriting recognition) hay nhận dạng tiếng nói có tính chất kết nối, không phân đoạn.
 		- Trong Keras, có ba lớp RNN: SimpleRNN, GRU và LSTM. Đối với hầu hết các mục đích thực tế, bạn nên sử dụng GRU hoặc LSTM. LSTM mạnh mẽ hơn nhưng cũng đắt đỏ hơn; bạn có thể coi GRU là một lựa chọn đơn giản và giá rẻ hơn.

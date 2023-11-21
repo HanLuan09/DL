@@ -1,8 +1,5 @@
 ### Xây dựng mạng Convolutional Neural Network (CNN)
 ----
-   Nếu bạn chưa có kiến thức về thị giác máy tính (Computer Vision) thì bạn nên đọc thêm về [loạt bài viết](https://github.com/bangoc123/learn-machine-learning-in-two-months/tree/master/computer-vision) tại đây.
-   
-   Một [slide](http://bit.ly/NextDN2018) mình đã từng chia sẻ tại sự kiện Google Cloud Next MienTrung 2018.
 
    - **a. Convolutional Neural Network**
    
@@ -172,3 +169,7 @@
 		- Mạng thần kinh tái phát (RNN) hoạt động bằng cách xử lý chuỗi đầu vào theo dấu thời gian tại một thời điểm và duy trì một trạng thái xuyên suốt (trạng thái thường là một vectơ hoặc tập hợp các vectơ
 		- Điều này cho phép mạng thể hiện hành vi động tạm thời. Có nguồn gốc từ mạng thần kinh truyền thẳng, RNN có thể dùng trạng thái trong (bộ nhớ) để xử lý các chuỗi đầu vào có độ dài thay đổi. Điều này làm cho RNN có thể áp dụng cho các tác vụ như nhận dạng chữ viết tay (handwriting recognition) hay nhận dạng tiếng nói có tính chất kết nối, không phân đoạn.
 		- Trong Keras, có ba lớp RNN: SimpleRNN, GRU và LSTM. Đối với hầu hết các mục đích thực tế, bạn nên sử dụng GRU hoặc LSTM. LSTM mạnh mẽ hơn nhưng cũng đắt đỏ hơn; bạn có thể coi GRU là một lựa chọn đơn giản và giá rẻ hơn.
+		
+   - **Cấu trúc mạng RNN**
+   - **Gate Recurrent Unit (GRU)**
+   - **Long Short-Term Memory (LSTM)**
